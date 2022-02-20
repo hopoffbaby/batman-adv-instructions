@@ -91,3 +91,18 @@ WIFI_PWR_ON_BAT = 1
 /etc/default/tlp
   
 # refs 
+
+# Fixes
+route is not properly created. Need to create a static one
+
+needed to go with the higher bat0 mtu, rather than reducing wan0
+
+needed to use ibss mode instead of ad-hoc mode:
+
+https://medium.com/swlh/setting-up-an-ad-hoc-mesh-network-with-raspberry-pi-3b-using-batman-adv-1c08ee565165
+
+ping times are long. 
+
+SCP rate ~500KB/s
+
+
