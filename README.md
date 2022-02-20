@@ -28,6 +28,8 @@ apt install alfred # optional utils
 # configure wifi interface
 `ip link set wlan0 down` #disable interface
 
+`ip addr flush dev wlan0` # clear any existing IP settings
+
 `ip link set dev wlan0 mtu 1532` # increase wlan0 mtu, or decrease bat0 mtu, shown later
 
 `iwconfig wlan0 mode ad-hoc`
